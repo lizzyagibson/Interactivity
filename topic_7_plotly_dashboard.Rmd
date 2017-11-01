@@ -1,0 +1,33 @@
+---
+title: "Plotly and Dashboard"
+author: "Lizzy Gibson"
+date: "November 1, 2017"
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(janitor)
+library(stringr)
+library(forcats)
+library(viridis)
+#install.packages("plotly")
+library(plotly)
+```
+
+## plot_ly
+
+How you code it is similar to ggplot, different syntax.
+
+## Dashboards
+
+Clearly structured collection of graphics, plots, summaries.
+
+flexdashboard is the R package, structured in R Markdown.
+
+
