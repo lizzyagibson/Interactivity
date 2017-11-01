@@ -32,10 +32,12 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-airbnb_data <-  read_csv("./nyc_airbnb.csv") %>% 
-  filter(neighbourhood_group == "Manhattan",
-         room_type == "Entire home/apt",
-         price > 100 & price < 400) 
+airbnb_data %>%
+  mutate(hover_text = str_c("Price: $", price, '\nRating: ', review_scores_location)) %>% 
+  plot_ly(x = ~longitude, y = ~latitude, type = "scatter", mode = "markers",
+          alpha = 0.5, 
+          color = ~price,
+          text = ~hover_text)
 ```
 
 Column {data-width=350}
