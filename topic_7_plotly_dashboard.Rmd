@@ -19,6 +19,8 @@ library(forcats)
 library(viridis)
 #install.packages("plotly")
 library(plotly)
+#install.packages("flexdashboard")
+library(flexdashboard)
 ```
 
 ## plot_ly
